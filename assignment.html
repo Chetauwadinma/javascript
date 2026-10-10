@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body
+    
+    {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+      border-top: 8px solid #007bff; /* Color changes dynamically */
+      transition: border-color 0.3s ease;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      min-height: 60px; /* Prevents card resizing while fetching */
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="AdviceCard">
+    <h2>Wisdom of the Day</h2>
+    <p id="AdviceText">Loading advice...</p>
+    <button id="AdviceBtn">Get New Advice</button>
+  </div>
+</style>
+  <script src="assignment.js" defer></script>
+</body>
+</html>
